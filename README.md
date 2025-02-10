@@ -39,14 +39,6 @@ This phase ensures compliance with service agreements and applies penalties for 
 - **`CalculatePenalty.sol`**:  
   Computes penalties based on breach records. The execution requires approximately **49,143** gas units.
 
-### **Gas Consumption Analysis**
-Gas costs are a significant consideration in blockchain transactions. The analysis revealed:
-
-- The first transaction in a contract incurs the highest cost due to storage initialization.
-- Subsequent transactions use optimized *warm storage*, reducing gas costs.
-- Service selection contracts experience varying gas usage depending on storage retrieval type.
-
-This structured approach enables an efficient and transparent **decentralized marketplace** for inter-provider agreements.
 
 
 ## Installation and Running Instructions Using Hardhat
