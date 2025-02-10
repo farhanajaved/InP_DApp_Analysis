@@ -85,7 +85,7 @@ This phase ensures compliance with service agreements and applies penalties for 
 
 - **Deploy contracts:**
   ```
-  npx hardhat run scripts/deploy.js --network polygon_mumbai
+  npx hardhat run scripts/deploy.js --network sepolia
   ```
   Deploys the smart contracts to the Polygon Mumbai testnet.
 
@@ -93,11 +93,11 @@ This phase ensures compliance with service agreements and applies penalties for 
   ```
   npx hardhat console --network polygon_mumbai
   ```
-  Provides an interactive console to interact with deployed contracts.
+  Deploys the smart contracts to the Ethereum Sepolia testnet.
 
 - **Verify contract on Etherscan:**
   ```
-  npx hardhat verify --network polygon_mumbai DEPLOYED_CONTRACT_ADDRESS
+  npx hardhat verify --network sepolia DEPLOYED_CONTRACT_ADDRESS
   ```
   Verifies the source code of your deployed contract on the Polygon Etherscan, which is useful for transparency and trust.
 
@@ -105,10 +105,12 @@ This phase ensures compliance with service agreements and applies penalties for 
 
 If you want to use Hardhat Ignition for deployment:
 ```
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+npx hardhat ignition deploy ./ignition/modules/file_name.js
 ```
 This command deploys modules using Hardhat Ignition, a plugin for advanced deployment scripts.
 
 ## Conclusion
 
-This setup not only improves the robustness and efficiency of the O-RAN ecosystem but also enhances data security and user privacy through decentralized technologies. The integration of blockchain allows for a tamper-proof, transparent record-keeping system that significantly boosts the trustworthiness of the federated learning process within telecom networks.
+This paper introduced a blockchain-based framework on the Ethereum live testnet to address the challenges of multi-phase inter-provider agreements in 6G contexts. By organizing our smart contracts into a *Preliminary Agreement Phase* (`addService`, `selectService`) and an *Enforcement Phase* (`registerBreach`, `calculatePenalty`), we measured both their gas usage and how blockchain parameters—gas price, block size, and transaction count—shape latency. Notably, our post-hoc analyses revealed that certain pairwise comparisons exhibited medium effect sizes in the *Preliminary Agreement Phase* when block size or transaction count spiked, suggesting that concurrency can overshadow fee-based prioritization more strongly than initially anticipated. Meanwhile, in the *Enforcement Phase*, multiple gas-price comparisons showed significant differences with a Cliff’s Delta up to 0.36, highlighting how lighter transaction logic makes fee bidding a more pivotal factor.
+
+Such results underscore the potential benefits when designing and deploying smart contracts. For instance, minimizing heavy on-chain storage or batching it during off-peak times can alleviate block saturation, while adopting *adaptive fee policies* that incorporate real-time network load can help detect and react to concurrency surges. Applying *concurrency-aware scheduling* can further smooth latency spikes when multiple providers interact with the DApp. In more complex or high-throughput scenarios, additional measures such as EVM-level refactoring (e.g., reducing on-chain storage) or using Layer-2 solutions (e.g., Polygon or rollups) may mitigate latency and cost overheads. Future investigations could broaden the scope of on-chain metrics—beyond gas price, block size, and transaction count—to refine our understanding of how best to balance cost and throughput in beyond-5G decentralized environments.
