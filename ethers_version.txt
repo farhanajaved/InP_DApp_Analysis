@@ -1,0 +1,40 @@
+npm install ethers@5.4.0 --legacy-peer-deps
+ 
+
+added 33 packages, changed 13 packages, and audited 608 packages in 4s
+
+126 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+fjaved@P-212-102201:~/demos/hardhat-project$ npm list ethers
+npm ERR! code ELSPROBLEMS
+npm ERR! invalid: ethers@5.4.0 /home/fjaved/demos/hardhat-project/node_modules/ethers
+hardhat-project@1.0.0 /home/fjaved/demos/hardhat-project
+├─┬ @nomicfoundation/hardhat-chai-matchers@2.0.6
+│ └── ethers@5.4.0 deduped invalid: "^6.1.0" from node_modules/@nomicfoundation/hardhat-chai-matchers
+├─┬ @nomicfoundation/hardhat-ethers@3.0.6
+│ └── ethers@5.4.0 deduped invalid: "^6.1.0" from node_modules/@nomicfoundation/hardhat-chai-matchers, "^6.1.0" from node_modules/@nomicfoundation/hardhat-ethers
+├─┬ @nomicfoundation/hardhat-ignition-ethers@0.15.4
+│ └── ethers@5.4.0 deduped invalid: "^6.1.0" from node_modules/@nomicfoundation/hardhat-chai-matchers, "^6.1.0" from node_modules/@nomicfoundation/hardhat-ethers, "^6.7.0" from node_modules/@nomicfoundation/hardhat-ignition-ethers
+├─┬ @nomicfoundation/hardhat-toolbox@5.0.0
+│ └── ethers@5.4.0 deduped invalid: "^6.1.0" from node_modules/@nomicfoundation/hardhat-chai-matchers, "^6.1.0" from node_modules/@nomicfoundation/hardhat-ethers, "^6.7.0" from node_modules/@nomicfoundation/hardhat-ignition-ethers, "^6.4.0" from node_modules/@nomicfoundation/hardhat-toolbox
+├─┬ @nomicfoundation/ignition-core@0.15.4
+│ └── ethers@6.12.1
+├─┬ @nomiclabs/hardhat-ethers@2.2.3
+│ └── ethers@5.4.0 deduped invalid: "^6.1.0" from node_modules/@nomicfoundation/hardhat-chai-matchers, "^6.1.0" from node_modules/@nomicfoundation/hardhat-ethers, "^6.7.0" from node_modules/@nomicfoundation/hardhat-ignition-ethers, "^6.4.0" from node_modules/@nomicfoundation/hardhat-toolbox
+├─┬ @typechain/ethers-v6@0.5.1
+│ └── ethers@5.4.0 deduped invalid: "^6.1.0" from node_modules/@nomicfoundation/hardhat-chai-matchers, "^6.1.0" from node_modules/@nomicfoundation/hardhat-ethers, "^6.7.0" from node_modules/@nomicfoundation/hardhat-ignition-ethers, "^6.4.0" from node_modules/@nomicfoundation/hardhat-toolbox, "6.x" from node_modules/@typechain/ethers-v6
+├─┬ @typechain/hardhat@9.1.0
+│ └── ethers@5.4.0 deduped invalid: "^6.1.0" from node_modules/@nomicfoundation/hardhat-chai-matchers, "^6.1.0" from node_modules/@nomicfoundation/hardhat-ethers, "^6.7.0" from node_modules/@nomicfoundation/hardhat-ignition-ethers, "^6.4.0" from node_modules/@nomicfoundation/hardhat-toolbox, "6.x" from node_modules/@typechain/ethers-v6, "^6.1.0" from node_modules/@typechain/hardhat
+├── ethers@5.4.0 invalid: "^6.1.0" from node_modules/@nomicfoundation/hardhat-chai-matchers, "^6.1.0" from node_modules/@nomicfoundation/hardhat-ethers, "^6.7.0" from node_modules/@nomicfoundation/hardhat-ignition-ethers, "^6.4.0" from node_modules/@nomicfoundation/hardhat-toolbox, "6.x" from node_modules/@typechain/ethers-v6, "^6.1.0" from node_modules/@typechain/hardhat
+└─┬ hardhat-gas-reporter@1.0.10
+  └─┬ eth-gas-reporter@0.2.27
+    └── ethers@5.7.2
+
+
+npm ERR! A complete log of this run can be found in: /home/fjaved/.npm/_logs/2024-05-26T22_24_50_947Z-debug-0.log
+fjaved@P-212-102201:~/demos/hardhat-project$ npx hardhat run /home/fjaved/demos/hardhat-project/test/sepolia/deploy_HybridModelSepolia.js --network sepolia
+Deploying contracts with the account: 0xD95de4d3A33e72f01466AddeacE77ec5Ca831607
+Contract deployed to: 0xc6f94cc0191b98eb2F8655f51fFbE7e7B8586500
+fjaved@P-212-102201:~/demos/hardhat-project$ 
