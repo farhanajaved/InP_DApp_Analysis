@@ -65,7 +65,8 @@ This phase ensures compliance with service agreements and applies penalties for 
    Add your Ethereum wallet private key and Alchemy/Polygon node URL:
    ```
    PRIVATE_KEY="your-wallet-private-key"
-   POLYGON_URL="https://polygon-mumbai.g.alchemy.com/v2/your-api-key"
+   SEPOLIA_URL="https://eth-sepolia.g.alchemy.com/v2/your-api-key"
+
    ```
 
 ### Common Hardhat Commands
