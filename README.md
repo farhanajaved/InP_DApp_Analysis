@@ -87,11 +87,11 @@ This phase ensures compliance with service agreements and applies penalties for 
   ```
   npx hardhat run scripts/deploy.js --network sepolia
   ```
-  Deploys the smart contracts to the Polygon Mumbai testnet.
+  Deploys the smart contracts to the Sepolia testnet.
 
 - **Interact with deployed contracts:**
   ```
-  npx hardhat console --network polygon_mumbai
+  npx hardhat console --network sepolia
   ```
   Deploys the smart contracts to the Ethereum Sepolia testnet.
 
