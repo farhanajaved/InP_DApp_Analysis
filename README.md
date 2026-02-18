@@ -11,7 +11,6 @@ Building on these initial measurements, we perform a comprehensive Kruskal–Wal
 
 Overall, **86%** of transactions finalize within **30 seconds**, underscoring that while designing decentralized applications, there must be a balance between contract complexity and fee strategies.  
 
-The implementation of this work is publicly accessible [online](https://github.com/farhanajaved/InP_DApp_Analysis.git).
 
 
 
