@@ -15,7 +15,7 @@ The implementation of this work is publicly accessible [online](https://github.c
 
 
 
-![Proposed Framework for Blockchain and Federated Learning in O-RAN](Framework_BC--Marketplace-1.pdf)
+![Proposed Framework for Blockchain and Federated Learning in O-RAN](Framework_BC--Marketplace-final.png)
 
 ## Overview of Smart Contracts
 
