@@ -125,6 +125,6 @@ If you use this code or build on these results, please cite:
   author  = {Javed, Farhana and others},
   journal = {arXiv preprint},
   year    = {2026},
-  url     = {[https://arxiv.org/abs/XXXX.XXXXX](https://arxiv.org/pdf/2503.01397)}
+  url     = {https://arxiv.org/pdf/2503.01397}
 }
 ```
