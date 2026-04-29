@@ -120,11 +120,10 @@ Such results underscore the potential benefits when designing and deploying smar
 If you use this code or build on these results, please cite:
 
 ```bibtex
-@article{javed2026interprovider,
-  title   = {An Empirical Smart Contracts Latency Analysis on Ethereum Blockchain for Trustworthy Inter-Provider Agreements},
-  author  = {Javed, Farhana and others},
-  journal = {arXiv preprint},
-  year    = {2026},
-  url     = {https://arxiv.org/pdf/2503.01397}
+@article{javed2025empirical,
+  title={An empirical smart contracts latency analysis on ethereum blockchain for trustworthy inter-provider agreements},
+  author={Javed, Farhana and Mangues-Bafalluy, Josep},
+  journal={arXiv preprint arXiv:2503.01397},
+  year={2025}
 }
 ```
